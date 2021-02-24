@@ -1,0 +1,31 @@
+
+  body,
+  html {
+    height: 100%;
+    background-image: linear-gradient(rgb(177, 0, 251), rgb(18, 0, 148), rgb(0, 0, 0));
+    margin: 0px;
+    font-family: 'Copperplate Gothic';
+  }
+
+  .navigationArea {
+    display: flex;
+    background-color: black;
+  }
+
+  .navigationBar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigationDivs {
+    padding: 5px 30px;
+  }
+
+  .navigationDivs:hover {
+    background-color: rgb(50, 50, 50);
+  }
+
+  .navigationLinks {
+    color: white;
+    text-decoration: none;
+  }

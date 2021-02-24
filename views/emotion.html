@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Update Emotion</title>
+</head>
+
+<style>
+  ::placeholder {
+    color: rgba(227, 96, 230, 0.57);
+  }
+</style>
+<style type="text/css">
+  body {
+    background: url("../images/SignUp.jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Copperplate Gothic';
+  }
+
+  .myform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  .myform p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .myform input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .myform input[type="text"],
+  .myform input[type="password"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+  }
+
+  .myform input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: hsl(281, 100%, 50%);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .myform input[type="submit"]:hover {
+    background: rgba(227, 96, 230, 0.57);
+    color: black;
+  }
+
+  .myform input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: hsl(281, 100%, 50%);
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .myform input[type="button"]:hover {
+    background: rgba(227, 96, 230, 0.57);
+    color: white;
+  }
+
+
+  label {
+    color: white;
+  }
+</style>
+
+
+<script type="text/javascript">
+  function myFunction() {
+    url = document.getElementById("emotion").value;
+    sessionStorage.setItem("url", url);
+    window.location.href = 'player.html';
+  }
+</script>
+
+<body>
+  <div id="emotionBox">
+    <form class="myform" action="emotion" method="post">
+
+      <label><b>Emotion URL:</label><br>
+      <input id="emotion" name="emotion" type="text" class="inputvalues" placeholder="Emotion URL" /><br>
+
+
+      <input type="button" onclick="myFunction()" value="Submit" />
+
+    </form>
+
+
+</body>
+
+</html>
